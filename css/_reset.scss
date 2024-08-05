@@ -1,0 +1,53 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+input,
+select,
+textarea {
+  background-color: transparent;
+  outline: none;
+}
+button {
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+}
+body {
+  min-height: 100vh;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  font-family: 'Built Titling', sans-serif;                                   
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+a{
+  text-decoration: none;
+}
+
+
+
+$purple:#7853A2;
+$light-purple:#9277B5;
+$pink:#BA4693;
+$orange:#EA572A; 
+$blue:#3994D1;
+$gray:#414042;
+$light-gray:#58595B;

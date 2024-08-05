@@ -1,0 +1,44 @@
+// JOURNEY
+.journey{
+    height: auto;
+    background-color: #9277b5a3;
+    padding: 40px;
+    &-wrapper{
+        display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0 0 ;
+    }
+    &-container-left{
+        background-color: #fff;
+        position: relative;
+        padding-top: 209px;
+        h2{
+            font-size: 32px;
+            font-weight: 500;
+            font-style: italic;
+            font-family: "";
+            margin-bottom: 85px;
+        }
+    }
+    &-left-content{
+        position: absolute;
+        width: 587px;
+        right: 0;
+    }
+    &-title{
+        font-size: 53.88px;
+        letter-spacing: 1.6px;
+        line-height: 1.1;
+        width: 277px;
+        word-spacing: 7px;
+        font-family: "";
+        color:$purple;
+        margin-bottom: 35px;
+    }
+    &-content{
+        max-width: 430px;
+        font-family: "Roboto", sans-serif;
+        word-spacing: 4px;
+        line-height: 1.4;
+    }
+}

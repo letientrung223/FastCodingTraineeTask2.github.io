@@ -1,0 +1,118 @@
+// EVENTS
+.events{
+    height: 1070px;
+    background-color: $purple;
+
+    &-wrapper{
+        position: relative;
+        max-width: 1600px;
+        margin: 0 auto;
+        img{
+            margin: 0 auto;
+        }
+    }
+    &-container{
+        padding-left: 246px;
+        position: relative;
+        height: 274px;
+        width: 1602px;
+        background-color: #7853A2;
+        transform: translate(-1px, -144px);
+        display: flex;
+    }
+    &-desc{
+        width: 667px;
+        padding-top: 73px;
+
+        h3{
+            color: white;
+            text-transform: uppercase;
+            font-style: italic;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+        h2{
+            font-size: 53.88px;
+            color: white;
+            letter-spacing: 7px;
+            font-family: "";
+            margin-bottom: 10px;
+        }
+        p{
+            color: white;
+            line-height: 1.6;
+            letter-spacing: 2px;
+            font-family: "";
+            font-weight: 100;
+            max-width: 446px;
+        }
+    }
+    &-time{
+        padding-top: 115px;
+        width: 257px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #6b35a8;
+        i{
+            color: white;
+            font-size: 40px;
+            margin-bottom: 40px;
+        }
+        p{
+            color: white;
+            font-size: 32px;
+            font-family: "";
+        }
+    }
+    &-address{
+        color:white;
+        padding-top: 73px;
+        width: 314px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h2{
+            padding-left: 10px;
+            font-size: 32px;
+            font-weight: 300;
+            letter-spacing: 7px;
+            font-family: "";
+            margin-bottom: 20px;
+        }
+        p{
+            font-family: "";
+
+        }
+    }
+}
+
+.direction-container{
+    display: flex;
+    padding: 0 90px;
+    justify-content: space-between;
+    position: relative;
+    transform: translateY(-316px);
+}
+.direction-icon{
+    display: flex;
+    width: 93px;
+    height: 93px;
+    border-radius: 50px;
+    background-color:$orange;
+    justify-content: center;
+    align-items: center;
+    i{
+        color:$orange;
+        font-size: 30px;
+        background-color: white;
+        width: 37px;
+        height: 37px;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

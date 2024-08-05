@@ -1,0 +1,51 @@
+// MEMBER
+.member{
+    background: linear-gradient(to right,$orange 70%, transparent 70%);
+    height: 965px;
+    &-wrapper{
+        width:1176px;
+        display: flex;
+        margin:0 auto;
+        justify-content: space-between;
+        padding-left:30px;
+    }
+    &-container-left{
+        padding-top: 195px;
+    }
+    &-container-right{
+        padding-top: 100px;
+    }
+    &-title{
+        font-size: 96px;
+        font-family: "";
+        color: white;
+        letter-spacing: 10px;
+        margin-bottom: 63px;
+        max-width: 655px;
+        word-spacing: 20px;
+    }
+    &-submit-form{
+        display:flex;
+        flex-direction: column;
+        gap:17px;
+        max-width: 444px;
+        .input-text{
+            height:59px;
+            padding-left: 20px;
+            font-family: "";
+            font-size: 32px;
+            border:none;
+            background-color: white;
+        }
+        .input-btn{
+            width:240px;
+            height: 59px;
+            font-family: "";
+            text-transform: uppercase;
+            background-color: #414042;
+            color:white;
+            border:none;
+            letter-spacing: 3px;
+        }
+    }
+}
