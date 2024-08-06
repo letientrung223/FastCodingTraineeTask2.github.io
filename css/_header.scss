@@ -24,6 +24,7 @@
         letter-spacing:4px;
         font-family: "";
         font-size: 18px;
+        text-transform: uppercase;
 
     }
     &-menu-item:hover{
@@ -41,6 +42,9 @@
         i{
             color:rgba(255, 255, 255, 0.679);
         }
+    }
+    &-logo i:hover{
+        color:rgba(126, 9, 172, 0.679);
     }
 }
 .header-nav{
