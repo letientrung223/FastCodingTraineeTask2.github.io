@@ -464,7 +464,6 @@ a {
 .events-container {
   padding-left: 246px;
   position: relative;
-  height: 274px;
   width: 1602px;
   background-color: #7853A2;
   transform: translate(-1px, -144px);
@@ -528,7 +527,7 @@ a {
   padding-left: 10px;
   font-size: 32px;
   font-weight: 300;
-  letter-spacing: 7px;
+  letter-spacing: 4px;
   font-family: "";
   margin-bottom: 20px;
 }
@@ -953,6 +952,30 @@ a {
   .introduction-image-container {
     transform: translate(-250px, 10px);
   }
+  .people-list {
+    margin-left: 30px;
+    display: grid;
+    justify-content: flex-start;
+    grid-auto-columns: 100%;
+    grid-auto-flow: column;
+    grid-gap: 0 5rem;
+    overflow: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-snap-stop: always;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    -webkit-overflow-scrolling: touch;
+    scroll-padding: 1rem;
+    grid-template-columns: unset;
+  }
+  .people-list::-webkit-scrollbar {
+    display: none;
+    width: 0;
+  }
+  .people-list > * {
+    scroll-snap-align: start;
+  }
   .journey-container-left {
     background-color: #fff;
     position: relative;
@@ -963,6 +986,9 @@ a {
     position: relative;
     right: 0;
     width: 100%;
+  }
+  .journey-left-content h2 {
+    margin-bottom: 42px;
   }
   .events {
     height: 766px;
@@ -1000,8 +1026,9 @@ a {
     align-items: center;
   }
   .events-address h2 {
+    display: flex;
     font-size: 24px;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
   }
   .building-wrapper {
     position: relative;
@@ -1037,10 +1064,16 @@ a {
   .expert-container-top {
     opacity: 0.8;
   }
+  .expert-container-top:hover {
+    opacity: 1;
+  }
   .expert-container-bottom {
     display: flex;
     height: 338px;
     opacity: 0.8;
+  }
+  .expert-container-bottom:hover {
+    opacity: 1;
   }
   .expert-container-bottom-left {
     width: 54%;
@@ -1071,6 +1104,9 @@ a {
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
+  }
+  .map-content:hover {
+    opacity: 1;
   }
   .map-content-left {
     padding-left: 15px;
@@ -1497,7 +1533,10 @@ a {
   }
   .member-title {
     font-size: 66px;
-    word-spacing: 8px;
+    word-spacing: 2px;
+  }
+  .events-desc {
+    padding-left: 0;
   }
 }
 @media screen and (max-width: 390.98px) {
