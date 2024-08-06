@@ -79,6 +79,7 @@
             flex-direction: column-reverse;
         }
         &-container-right{
+            position: static;
             margin-bottom: 30px;
             border-left: 1px solid white;
         }
@@ -93,6 +94,8 @@
             }
         }
         &-list{
+                margin-left: 30px;
+                position: relative;
                 display: grid;
                 justify-content: flex-start;
                 grid-auto-columns: 100%;
@@ -423,5 +426,10 @@
     .member-title {
         font-size: 66px;
         word-spacing: 8px;
+    }
+}
+@media screen and (max-width: 390.98px) {
+    .introduction-content-title {
+        font-size: 4.5rem;
     }
 }
