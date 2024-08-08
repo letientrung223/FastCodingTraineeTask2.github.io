@@ -1245,7 +1245,6 @@ a {
   .map-content-left h2 {
     font-size: 48px;
     margin-bottom: 25px;
-    font-family: "";
     word-spacing: 3px;
     letter-spacing: 4px;
   }
@@ -1605,7 +1604,7 @@ a {
     width: 90%;
   }
   .introduction-content {
-    width: 100%;
+    width: 90%;
   }
   .direction-container {
     align-items: center;
