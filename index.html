@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="./css/app.css">
     <link href="https://fonts.cdnfonts.com/css/built-titling" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap"
         rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/a426421f65.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
@@ -22,7 +24,7 @@
 <body>
     <div class="container">
         <header class="header-fixed">
-            
+
             <nav class="header-nav">
                 <input type="checkbox" name="open" id="open">
                 <label for="open" class="open">
@@ -41,11 +43,12 @@
                 <ul class="header-menu-list">
                     <li class="header-menu-item"><a href="" class="header-menu-link">we're difference</a></li>
                     <li class="header-menu-item"><a href="" class="header-menu-link">UNIQUE TO YOU</a></li>
-                    <li class="header-menu-item"><a href="" class="header-menu-link">PRICING</a></li>
+                    <li class="header-menu-item" id="header-pricing"><a href="" class="header-menu-link">PRICING</a>
+                    </li>
                 </ul>
             </div>
             <div class="header-logo">
-                <i class="fas fa-user"></i>
+                <i class="fas fa-light fa-comment-dots"></i>
                 <i class="fas fa-shopping-cart"></i>
                 <a href="index.html"><img src="./img/logo.png" alt=""></a>
             </div>
@@ -55,7 +58,7 @@
                 <div class="introduction-wrapper">
                     <div class="introduction-container">
                         <div class="introduction-content">
-                            <h2 class="introduction-content-title">lets make something beautiful</h2>
+                            <h2 class="introduction-content-title">lets make something beautiful.</h2>
                             <div class="introduction-content-container">
                                 <p class="introduction-content-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing
                                     elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
@@ -63,8 +66,9 @@
                                 </p>
                             </div>
                             <div class="introduction-link-container">
-                                <a href="index.html" class="introduction-content-link"><span>Heart</span> 290</a>
-                                <i class="fas fa-angle-double-right"></i>
+                                <a href="index.html" class="introduction-content-link"><span><i
+                                            class="fas fa-solid fa-heart"></i></span> 290</a>
+                                <i class="fas fa-solid fa-angle-down"></i>
                             </div>
                         </div>
                         <div class="introduction-image-container">
@@ -76,13 +80,15 @@
             </section>
             <section class="people">
                 <div class="people-wrapper">
-                    <div class="people-container-top"></div>
+                    <div class="people-container-top">
+                        <div class="people-container-top-content"></div>
+                    </div>
                     <div class="people-container-main">
                         <div class="people-container-left">
                             <h2 class="people-title">Its about people not products</h2>
-                            <p class="people-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
-                                commodi quidem repellat delectus rerum illo quia illum. Tempore corrupti iste assumenda
-                                ut, ipsum voluptatem magnam minima eos ea possimus in.</p>
+                            <p class="people-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi
+                                enim ad minim veniam, quis nostrud exerci quis nostrud exerci tation ullamcorper.</p>
                             <div class="people-content-link">
                                 <a href="index.html" class="people-link">MEET OUR PARTNERS</a>
                             </div>
@@ -128,11 +134,10 @@
                                 THE DARK
                                 - A PEOPLE
                                 JOURNEY</p>
-                            <p class="journey-content">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Ducimus,Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
-                                illo. Distinctio enim, iure labore blanditiis minima nemo error aut veniam voluptas.
-                                Minus
-                                eius eveniet ducimus quidem, inventore laborum est autem!</p>
+                            <p class="journey-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
+                                wisi enim ad minim veniam, quis nostrud exerci quis nostrud exerci tation ullamcorper.
+                            </p>
                         </div>
                     </div>
                     <div class="journey-container-right">
@@ -159,11 +164,11 @@
                                 euismod tincidunt ut laoreet dolore magna...</p>
                         </div>
                         <div class="events-time">
-                            <i class="far fa-calendar"></i>
+                            <img src="./img/calendar-days-solid.svg" alt="">
                             <p class="events-timeline">22 november</p>
                         </div>
                         <div class="events-address">
-                            <h2><i class="fas fa-map-marker-alt"></i> PLAZA HOTEL </h2>
+                            <h2><i class="fas fa-solid fa-map-pin"></i> PLAZA HOTEL </h2>
                             <p>Baker street, London</p>
                         </div>
                     </div>
@@ -179,25 +184,27 @@
                         </p>
                         <ul class="building-list">
                             <li class="building-item">
-                                <a href="" class="building-link"><i class="fa fa-solid fa-check"></i>PREDICTIVE
+                                <a href="" class="building-link"><i
+                                        class="fas fa-solid fa-binoculars"></i></i>PREDICTIVE
                                     SEARCH</a>
                                 <p class="building-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic.
                                 </p>
                             </li>
                             <li class="building-item">
-                                <a href="" class="building-link"><i class="fa fa-solid fa-check"></i>UNLIMITED
-                                    POWERS</a>
+                                <a href="" class="building-link"><i class="fas fa-solid fa-bolt"></i></i></i>UNLIMITED
+                                    POWERSV</a>
                                 <p class="building-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic.
                                 </p>
                             </li>
                             <li class="building-item">
-                                <a href="" class="building-link"><i class="fa fa-solid fa-check"></i>BUG FREE
+                                <a href="" class="building-link"><i class="fas fa-solid fa-bug"></i></i>BUG FREE
                                     SOFTWARE</a>
                                 <p class="building-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic.
                                 </p>
                             </li>
                             <li class="building-item">
-                                <a href="" class="building-link"><i class="fa fa-solid fa-check"></i>TOP PERFORMER</a>
+                                <a href="" class="building-link"><i class="fas fa-solid fa-crown"></i></i>TOP
+                                    PERFORMER</a>
                                 <p class="building-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic.
                                 </p>
                             </li>
@@ -231,11 +238,12 @@
                     <div class="expert-container">
                         <div class="expert-container-top">
                             <h3>EXPERT STAFF</h3>
-                            <h2 class="expert-title">we're difference</h2>
-                            <p class="expert-content-top">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                Sunt, in
-                                sit repudiandae non aperiam iusto labore quisquam velit neque nulla officia quo nisi,
-                                incidunt ea molestias inventore? Ullam, exercitationem repellat?</p>
+                            <h2 class="expert-title">we're DIFFERENT</h2>
+                            <p class="expert-content-top">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                diam nonummy nibh euismod tincidunt
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh</p>
+                            <img src="./img/Layer18.png" alt="">
+
                         </div>
                         <div class="expert-container-bottom">
                             <div class="expert-container-bottom-left">
@@ -243,8 +251,9 @@
                                 <p class="expert-content-bottom">We're here to 24 hours per day 7 days per week</p>
                             </div>
                             <div class="expert-container-bottom-right">
-                                <div class="item" id="item1"><a href="" class="">Bullhorn</a></div>
-                                <div class="item" id="item2"><a href="">Flask</a></div>
+                                <div class="item" id="item1"><a href="" class=""><i
+                                            class="fas fa-solid fa-bullhorn"></i></a></div>
+                                <div class="item" id="item2"><a href=""><i class="fas fa-solid fa-flask"></i></a></div>
                                 <div class="item" id="item3"></div>
                             </div>
 
@@ -258,15 +267,16 @@
                     <div class="map-content">
                         <div class="map-content-left">
                             <h2 class="map-title">get in touch</h2>
-                            <p class="map-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
-                            <p class="map-number">01482 765465</p>
+                            <p class="map-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                nonummy nibh euismod tincidunt ut laoreet.</p>
+                            <p class="map-number"><i class="fas fa-solid fa-phone"></i> 01482 765465</p>
                             <div class="map-media">
-                                <i class="fab fa-brands fa-facebook"></i>
                                 <i class="fab fa-brands fa-twitter"></i>
+                                <i class="fab fa-brands fa-facebook"></i>
                                 <i class="fab fa-brands fa-instagram"></i>
                                 <i class="fab fa-brands fa-pinterest"></i>
                             </div>
-                            <p class="map-visit">Visit us</p>
+                            <p class="map-visit"><i class="fa-solid fa-location-dot"></i></i>Visit us</p>
                         </div>
                         <div class="map-content-right">
                             <h2>send us a message</h2>
@@ -285,7 +295,7 @@
         <footer class="footer">
             <div class="footer-wrapper">
                 <ul class="footer-list">
-                    <li class="footer-item"><a href="http://">we're difference</a></li>
+                    <li class="footer-item"><a href="http://">we're DIFFERENT</a></li>
                     <li class="footer-item"><a href="http://">UNIQUE TO YOU</a></li>
                     <li class="footer-item"><a href="http://">PRICING</a></li>
                     <li class="footer-item"><a href="http://">CONTACT</a></li>

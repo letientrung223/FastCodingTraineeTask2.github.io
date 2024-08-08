@@ -4,7 +4,7 @@
     &-wrapper{
         width: 1595px;
         position: relative;
-        padding:30px;
+        padding:39px 32px;
         margin: 0 auto;
     }
     &-img{
@@ -14,36 +14,42 @@
     &-content{
         max-width: 919px;
         height:auto;
-        min-height: 574px;
+        min-height: 572px;
         position: absolute; 
         top: 50%; 
         left: 50%; 
-        transform: translate(-50%, -50%); 
+        transform: translate(-50%, -271px); 
         color: white; 
         background-color: rgba(0, 0, 0, 0.5);     
         display: flex;  
         &-left{
-            padding-left: 35px;
-            padding-top: 43px;
+            padding-left: 36px;
+            padding-top: 37px;
             width: 366px;
-            background-color: $purple;
+            background-color: #7853A2;
             height: auto;
             padding-bottom: 30px;
             h2{
+                text-transform: uppercase;
                 font-size: 48px;
-                margin-bottom: 40px;
-                font-family: "";
+                margin-bottom: 36px;
                 word-spacing: 3px;
-                letter-spacing:4px
+                letter-spacing: 4px;
             }
             .map-desc,.map-number{
-                // font-size: 16px;
                 font-family: 'Roboto', sans-serif;
                 font-weight: 100;
-                word-spacing: 2px;
+                // word-spacing: 2px;
                 line-height: 28px;
-                margin-bottom: 50px;
+                margin-bottom: 40px;
                 padding-right: 30px;
+            }
+            .map-number{
+                margin-bottom: 52px;
+                font-size: 32px;
+                i{
+                    margin-right: 5px;
+                }
             }
             span{
                 margin-bottom: 50px;
@@ -52,54 +58,58 @@
         &-right{
             width: 553px;
             background-color: $gray;
-            padding-top: 43px;
-            padding-left: 37px;
+            padding-top: 37px;
+            padding-left: 35px;
             h2{
-                font-size: 43px;
-                font-family: "";
-                letter-spacing: 4px;
-                word-spacing: 4px;
+                font-size: 48px;
+                letter-spacing: 5px;
+                word-spacing: -1px;
                 text-transform: uppercase;
-                margin-bottom: 45px;
+                margin-bottom: 42px;
             }
             &-form{
                 display:flex;
                 flex-direction: column;
                 gap:22px;
                 max-width: 482px;
+                margin-left: 2px;
                 input{
-                    background-color: $light-gray;
-                    color:white;
-                    border:none;
+                    background-color: #58595B;
+                    color: white;
+                    border: none;
                     height: 59px;
-                    padding-left: 20px;
+                    padding-left: 19px;
+                    letter-spacing: 3px;
+                    padding-top: 19px;
 
                     
                 }
                 input::placeholder,#message::placeholder{
                     color:white;
-                    font-family: "";
                     font-size: 32px;
+                    
                 }
                 #message{
-                    padding-top: 20px;
+                    padding-top: 12px;
+                    letter-spacing: 3px;
                     height: 168px;
-                    background-color: $light-gray;
-                    color:white;
-                    border:none;
-                    padding-left: 20px;
+                    background-color: #58595B;
+                    color: white;
+                    border: none;
+                    padding-left: 19px;
                     font-size: 32px;
-                    font-family: serif;
+                    text-transform: uppercase;
+                    margin-bottom: -8px;
                 }
                 .input-btn{
-                    background-color: $orange;
-                    color:white;
+                    background-color: #EA572A;
+                    color: white;
                     text-transform: uppercase;
                     max-width: 240px;
                     padding: 0;
                     font-size: 32px;
-                    letter-spacing: 4px;
-                    font-family: "";
+                    letter-spacing: 3px;
+                    margin-left: -2px;
 
                 }
             }
@@ -113,13 +123,20 @@
         i{
             font-size: 42px;
         }
-        margin-bottom: 57px;
+        i:hover{
+            font-size: 42px;
+            color:$orange;
+        }
+        margin-bottom: 53px;
     }
     &-visit{
         font-size: 32px;
         font-family: "Roboto", sans-serif;
         font-weight: 100;
-        letter-spacing: 2px;
+        // letter-spacing: 2px;
+        i{
+            margin-right: 19px;
+        }
     }
 
 

@@ -1,28 +1,30 @@
 // MEMBER
 .member{
-    background: linear-gradient(to right,$orange 70%, transparent 70%);
+    background: linear-gradient(to right, #EA572A 72%, transparent 70%);
     height: 965px;
+    margin-top: 19px;
     &-wrapper{
         width:1176px;
         display: flex;
         margin:0 auto;
         justify-content: space-between;
-        padding-left:30px;
+        padding-left:14px;
     }
     &-container-left{
-        padding-top: 195px;
+        padding-top: 172px;
     }
     &-container-right{
         padding-top: 100px;
+        transform: translateX(15px);
     }
     &-title{
         font-size: 96px;
-        font-family: "";
-        color: white;
-        letter-spacing: 10px;
-        margin-bottom: 63px;
-        max-width: 655px;
-        word-spacing: 20px;
+    color: white;
+    letter-spacing: 10px;
+    margin-bottom: 42px;
+    max-width: 625px;
+    word-spacing: 1px;
+    line-height: 115.2px;
     }
     &-submit-form{
         display:flex;
@@ -30,22 +32,24 @@
         gap:17px;
         max-width: 444px;
         .input-text{
-            height:59px;
-            padding-left: 20px;
-            font-family: "";
-            font-size: 32px;
-            border:none;
-            background-color: white;
+            height: 59px;
+    padding-left: 17px;
+    font-size: 32px;
+    border: none;
+    background-color: white;
+    padding-top: 4px;
+    letter-spacing: 3px;
         }
         .input-btn{
             width:240px;
             height: 59px;
-            font-family: "";
+            // font-family: "";
             text-transform: uppercase;
             background-color: #414042;
             color:white;
             border:none;
             letter-spacing: 3px;
+            font-size: 32px;
         }
         .input-btn:hover{
             background-color: #212122;
