@@ -447,9 +447,11 @@ a {
   font-style: italic;
   margin-bottom: 70px;
   line-height: 38.4px;
+  letter-spacing: 3px;
 }
 .journey-left-content {
-  padding-left: 16px;
+  padding-top: 3px;
+  padding-left: 34px;
   position: absolute;
   width: 587px;
   right: 0;
@@ -533,7 +535,7 @@ a {
   color: #c4c4c4;
   width: 76px;
   height: 90px;
-  margin-bottom: 23px;
+  margin-bottom: 29px;
 }
 .events-time i {
   color: white;
@@ -680,7 +682,7 @@ a {
 }
 .member-container-right {
   padding-top: 100px;
-  transform: translateX(15px);
+  transform: translate(17px, 3px);
 }
 .member-title {
   font-size: 96px;
@@ -1597,6 +1599,11 @@ a {
     align-items: center;
     flex-direction: column;
     height: auto;
+  }
+}
+@media (min-width: 600px) and (max-width: 650px) {
+  .introduction-content {
+    width: 90%;
   }
 }
 @media screen and (max-width: 599.98px) {

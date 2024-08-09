@@ -665,6 +665,12 @@
 
     }
 }
+@media (min-width: 600px) and (max-width: 650px) {
+    .introduction-content {
+        width: 90%;
+    }
+}
+
 // SURFACE DUO (540*720)
 @media screen and (max-width: 599.98px) {
     .introduction{
