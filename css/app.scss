@@ -22,6 +22,36 @@
         font-size: 18px;
     }
 }
+@media (min-width:1024.98px) and (max-width:2880.98px){
+    .people-list {
+        width: 817px;
+        // margin-left: 30px;
+        display: grid;
+        justify-content: flex-start;
+        grid-auto-columns: 31%;
+        grid-auto-flow: column;
+        grid-gap: 0 3rem;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+        scroll-snap-stop: always;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+        -webkit-overflow-scrolling: touch;
+        scroll-padding: 1rem;
+        grid-template-columns: unset;
+    }
+    
+    .people-list::-webkit-scrollbar {
+        display: none;
+        width: 0;
+    }
+    
+    .people-list > li {
+        scroll-snap-align: start;
+    }
+    
+}
 // IPAD PRO (1024*1366)
 @media screen and (max-width: 1024.98px) {
     .container{
@@ -422,7 +452,7 @@
         &-container-right{
             position: static;
             margin-bottom: 30px;
-            border-left: 1px solid white;
+            border-left: 2px solid white;
         }
         &-container-left{
             width: 100%;
@@ -489,6 +519,9 @@
         &-content {
             max-width: 85%;
         }
+        &-container-right {
+            transform: none;
+        }
     }
 }
 @media screen and (max-width: 768px) {
@@ -514,6 +547,7 @@
         &-desc {
             width: 90%;
             padding-top: 0;
+            padding-left: 0;
             p{
                 max-width: 100%;
             }
@@ -539,7 +573,14 @@
             justify-content: center;
             align-items: center;
             // margin-bottom: 30px;
+            h2{
+                padding-left: 0;
+            }
+            p{
+                margin-left: 0;
+            }
         }
+       
     }
     .direction-icon {
         display: flex;
@@ -590,7 +631,7 @@
             max-width: 100%;
         }
         &-list{
-            align-items: center;
+            // align-items: center;
         }
         &-title {
             text-align: center;
@@ -618,6 +659,7 @@
             flex-direction: column;
             align-items: center;
             text-align: center;
+            margin-left: 0;
         }
         &-container-right {
             padding-top: 100px;
@@ -634,7 +676,7 @@
         
         }
         &-submit-form .input-text {
-            width: 70%;
+            width: 100%;
         }
     }
     .member-container-right img {
@@ -888,7 +930,7 @@
     }
     //building
     .building-link {
-        color: #575353;
+        color: #414042;
         font-size: 27px;
         line-height: 1.2;
     }
