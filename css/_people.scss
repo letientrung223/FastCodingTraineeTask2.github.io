@@ -12,8 +12,8 @@
         margin: 0 auto;
         // border-left: 1px solid   white; 
         &-content{
-            border-left: 1px solid white;
-            margin-left: 17px;
+            border-left: 2px solid white;
+            margin-left: 28px;
             height: 100%;
 
         }
@@ -25,52 +25,58 @@
     &-title{
         max-width: 553px;
         font-size: 53.88px;
-        letter-spacing: 4px;
+        letter-spacing: 5.388px;
         line-height: 64.66px;
         color: white;
         padding-left: 30px;
-        border-left: 1px solid white;
+        border-left: 2px solid white;
         margin-bottom: 37px;
         font-weight: 400;
-        word-spacing: 7px;
+        // word-spacing: 7px;
     
     }
     &-content{
         padding-left: 30px;
         color:white;
-        font-family: "Roboto", sans-serif;
+        font-family: "Roboto Condensed", sans-serif;
+        
         line-height: 1.75;
-        max-width: 462px;
-        margin-bottom: 107px;
+        max-width: 463px;
+        margin-bottom: 108px;
     }
     &-content-link{
-        margin-left: 30px;
+        margin-left: 32px;
         max-width: 445px;
-        background-color:#ffffff47;;
         height: 128.99px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     &-content-link:hover{
-        background-color: #70c7dd;
+        background-color:#5da7d9;
+        opacity:118%;
+        cursor: pointer;
         .people-link{
-            padding-bottom:10px;
-            border-bottom:1px solid;
+            border-bottom:4px solid;
         }
     }
     &-link{
+        padding-bottom: 10px;
         color: white;
-    letter-spacing: 2px;
-    font-size: 18px;
-    line-height: 21.66px;
-    word-spacing: 3px;
+        letter-spacing: 2.7px;
+        font-size: 18px;
+        line-height: 21.6px;
+        // padding-left: 3px;
+        margin-top: 10px;
+        text-align: center;
+        width: 187px;
+
     }
     &-container-main{
         display:flex;
         margin:0 auto;
         width:1234px;
-        padding-left: 17px;
+        padding-left: 28px;
     }
     &-list{
         margin-left: 48px;
@@ -82,6 +88,13 @@
     &-item{
         width: 255px;
         height: 458px;
+        position:relative;
+        .fa-arrow-right{
+            position: absolute;
+            display:block;
+            bottom:14.7px;
+            right:16.6px;
+        }
     }
 }
 #people-item-1{
@@ -94,19 +107,21 @@
     line-height: 26.1px;
     h3{
         font-weight: 100;
-        letter-spacing: 1px;
+        letter-spacing: 1.6px;
         text-transform: lowercase;
-        margin-bottom: 36px;
+        margin-bottom: 38px;
         font-size: 16px;
         font-weight: 400;
+        color:#414042;
     }
     span{
         font-size: 22px;
         text-transform: uppercase;
-        font-weight: 900;
+        font-weight: 700;
         font-style: italic;
         // word-spacing: 7px;
-        letter-spacing: 1px;
+        letter-spacing: 2.2px;
+        line-height: 1.1;
     }
 }
 #people-item-2{
@@ -124,22 +139,22 @@
         }
     }
     .people-item-bottom{
-        padding-top: 30px;
+        padding-top: 32px;
         padding-left: 30px;
         padding-right: 80px;
         color: white;
         h3{
-            letter-spacing: 2px;
-            margin-bottom: 42px;
+            letter-spacing: 1.6px;
+            margin-bottom: 41px;
             font-size: 16px;
         }
         span{
             font-size: 22px;
             text-transform: uppercase;
-            font-weight: 900;
+            font-weight: 700;
             font-style: italic;
             word-spacing: 4px;
-            letter-spacing: 1px;
+            letter-spacing: 1.6px;
             line-height: 26.1px;
         }
     }
@@ -150,22 +165,25 @@
     flex-direction: column;
     justify-content: space-between;
     .people-item-top{
-        padding-top: 30px;
+        padding-top: 26px;
         padding-left: 30px;
         // padding-right: 30px;
         color: white;
         h3{
             letter-spacing: 2px;
-            margin-bottom: 47px;
+            margin-bottom: 42px;
             font-size: 16px;
         }
         span{
+            display:block;
+            width: 155px;
             font-size: 22px;
             text-transform: uppercase;
-            font-weight: 900;
+            font-weight: 700;
             font-style: italic;
-            word-spacing: 7px;
-            letter-spacing: 3px;
+            // word-spacing: 7px;
+            letter-spacing: 2.2px;
+            line-height: 26.4px;
         }
     }
 }

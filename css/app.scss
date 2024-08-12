@@ -316,14 +316,11 @@
     }
 
 }
-
-// IPAD MINI (768*1024)
-@media screen and (max-width: 768px) {
-    body{
-        font-size: 18px;
-    }
-    .container{
-        min-width: 360px;
+//IPAD AIR (820*1180)
+@media (min-width: 820.98px) and (max-width: 912.98px) {
+    .container {
+        max-width: 912px;
+        min-width: 768.98px;
     }
     .header{
         &-nav{
@@ -341,6 +338,53 @@
             z-index: 99;
         }
     }
+    .journey-title {
+        width: 95%;
+    }
+    .journey-container-right img{
+        height: 100%;
+    }
+    #footer-item1 {
+        width: 161px;
+        margin-right: 43px;
+    }
+}
+// IPAD MINI (768*1024)
+@media screen and (max-width: 768px) {
+    body{
+        font-size: 18px;
+    }
+    .container{
+        min-width: 360px;
+    }
+    .header{
+        &-fixed {
+            position: fixed;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            background-color: #7853A2;
+            height: 128px;
+            align-items: center;
+            margin-bottom: 45px;
+            z-index: 10;
+        }
+        &-nav{
+            display: inline-block;
+            position: relative;
+        }
+        &-menu{
+            display: none;
+        }
+        &-logo{
+            margin-right: 20px;
+        }
+        .open i{
+            position: relative;
+            z-index: 99;
+        }
+    }
+    
 }
 @media screen and (max-width: 768px) {
     .introduction{
@@ -386,8 +430,8 @@
         &-content{
             max-width: 90%;
             &-link{
-                max-width: 90%;
-                font-family: "";
+                max-width: 100%;
+                margin-left: 0px;
             }
         }
         &-list{
@@ -499,10 +543,18 @@
     }
     .direction-icon {
         display: flex;
-        width: 53px;
-        height: 53px;
+        width: 38px;
+        height: 38px;
+    }
+    
+    .direction-icon i {
+        color: #EA572A;
+        font-size: 20px;
+        background-color: #fce6d7;
+        width: 20px;
+        height: 20px;
         border-radius: 50px;
-        background-color: #EA572A;
+        display: flex;
         justify-content: center;
         align-items: center;
     }
@@ -550,7 +602,7 @@
     .member{
         height: auto;
         padding-bottom: 30px;
-        background: linear-gradient(to right, #EA572A 60%, transparent 100%);
+        background: linear-gradient(to right, #EA572A 100%, transparent 100%);
         &-wrapper {
             width: 90%;
             flex-direction: column-reverse;
@@ -562,6 +614,10 @@
         }
         &-container-left {
             padding-top: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
         }
         &-container-right {
             padding-top: 100px;
@@ -569,6 +625,16 @@
         }
         &-title {
             max-width: 100%;
+        }
+        &-submit-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            width: 100%;    
+        
+        }
+        &-submit-form .input-text {
+            width: 70%;
         }
     }
     .member-container-right img {
@@ -669,6 +735,32 @@
     .introduction-content {
         width: 90%;
     }
+    .footer-list {
+        width: 100%;
+        a{
+            padding: 0;
+        }
+        #footer-item1{
+            width:25%;
+            margin-right:10px;
+        }
+        #footer-item2{
+            width:25%;
+            margin-right:10px;
+            
+        }
+        #footer-item3{
+            width:25%;
+            margin-right:10px;
+            
+        }
+        #footer-item4{
+            width:25%;
+            margin-right:10px;
+            
+        }
+    }
+    
 }
 
 // SURFACE DUO (540*720)
@@ -699,8 +791,19 @@
             &-left,&-right{
                 padding-bottom: 30px;
                 width: 100%;
+                text-align: center;
             }   
         }
+        &-content-right-form {
+            align-items: center;        
+            input {
+                width: 100%;
+                height: 51px;    
+            }
+            #message{
+                width: 100%;
+            }
+    }
         &-media{
             width: 100%;
             display: flex;
@@ -729,10 +832,12 @@
             list-style: none;
             display: flex;
             gap: 30px;
-            font-family: "";
             font-size: 18px;
             flex-direction: column;
             margin-top: 30px;
+        }
+        &-logo img {
+             width: 100%;
         }
     }
 }

@@ -1,7 +1,7 @@
 // JOURNEY
 .journey{
     height: auto;
-    background-color: #9277b5a3;
+    background-color: #e6e1f0;
     padding: 40px;
     &-wrapper{
         display: grid;
@@ -13,6 +13,7 @@
         position: relative;
         padding-top: 202px;
         h2{
+            color:#414042;
             font-size: 32px;
             font-weight: bold;
             font-style: italic;
@@ -21,26 +22,30 @@
             letter-spacing: 3px;
         }
     }
+    &-container-right{
+        transform: translateX(-5px);
+    }
     &-left-content{
-        padding-top: 3px;
-        padding-left: 34px;
+        padding-top: 1px;
+        padding-left: 30px;
         position: absolute;
         width: 587px;
         right: 0;
     }
     &-title{
         font-size: 53.88px;
-    letter-spacing: 5.6px;
-    line-height: 64.66px;
-    width: 208px;
-    word-spacing: -1px;
-    color: #7853A2;
-    margin-bottom: 15px;
+        letter-spacing: 5.6px;
+        line-height: 64.66px;
+        width: 208px;
+        word-spacing: -1px;
+        color: #7853A2;
+        margin-bottom: 14px;
     }
     &-content{
         max-width: 430px;
-        font-family: "Roboto", sans-serif;
-        word-spacing: 4px;
-        line-height: 1.75;
+        color:#414042;
+        font-family: "Roboto Condensed", sans-serif;
+        // word-spacing: 4px;
+        line-height: 28px;
     }
 }

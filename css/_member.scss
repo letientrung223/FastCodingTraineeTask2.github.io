@@ -1,8 +1,8 @@
 // MEMBER
 .member{
-    background: linear-gradient(to right, #EA572A 72%, transparent 70%);
+    background: linear-gradient(to right, #EA572A 73%, transparent 73%);
     height: 965px;
-    margin-top: 19px;
+    margin-top: 15px;
     &-wrapper{
         width:1176px;
         display: flex;
@@ -12,43 +12,56 @@
     }
     &-container-left{
         padding-top: 172px;
+        margin-left: 15px;
     }
     &-container-right{
         padding-top: 100px;
-        transform: translate(17px, 3px);
+        transform: translate(30px, 0px);
     }
     &-title{
         font-size: 96px;
-    color: white;
-    letter-spacing: 10px;
-    margin-bottom: 42px;
-    max-width: 625px;
-    word-spacing: 1px;
-    line-height: 115.2px;
+        color: white;
+        letter-spacing: 9.6px;
+        margin-bottom: 41px;
+        max-width: 336px;
+        line-height: 115.2px;
     }
     &-submit-form{
         display:flex;
         flex-direction: column;
         gap:17px;
-        max-width: 444px;
+        width: 444px;
         .input-text{
             height: 59px;
-    padding-left: 17px;
-    font-size: 32px;
-    border: none;
-    background-color: white;
-    padding-top: 4px;
-    letter-spacing: 3px;
+            padding-left: 17px;
+            font-size: 32px;
+            border: none;
+            background-color: white;
+            color:#414042;
+            padding-top: 4px;
+            letter-spacing: 3px;
         }
         .input-btn{
-            width:240px;
+            // cursor: pointer;
+            // text-align: center;
+            // width:240px;
+            // height: 59px;
+            // text-transform: uppercase;
+            // background-color: #414042;
+            // color:white;
+            // border:none;
+            // letter-spacing: 3px;
+            // font-size: 32px;
+            cursor: pointer;
+            padding-left: 4px;
+            padding-top: 5.7px;
+            width: 240px;
             height: 59px;
-            // font-family: "";
             text-transform: uppercase;
             background-color: #414042;
-            color:white;
-            border:none;
-            letter-spacing: 3px;
+            color: white;
+            border: none;
+            letter-spacing: 3.2px;
             font-size: 32px;
         }
         .input-btn:hover{
